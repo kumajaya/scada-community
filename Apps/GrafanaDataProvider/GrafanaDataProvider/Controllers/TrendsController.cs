@@ -127,7 +127,7 @@ namespace GrafanaDataProvider.Controllers
             serverComm.Close();
 
             if (dataReceived)
-                trend.LastFillTime = DateTime.UtcNow;
+                trend.LastFillTime = DateTime.Now;
             else
                 Log.WriteError("Unable to receive trend.");
 
